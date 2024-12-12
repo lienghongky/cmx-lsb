@@ -117,10 +117,10 @@ The following diagram illustrates the overall architecture of the LSB method:
 
 ### Screenshots
 #### Unity 3D HMI Visualization
-![HMI Screenshot](./docs/hmi_screenshot.png)
+![HMI Screenshot](./imgs/hmi_d.png)
 
 #### BEV Output with Blob Detection
-![BEV Output](./docs/bev_output.png)
+![BEV Output](./imgs/full_cams.gif)
 
 ## Citation
 If you find this work useful, please consider citing the original *Lift-Splat-Shoot* paper:
