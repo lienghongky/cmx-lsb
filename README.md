@@ -44,10 +44,11 @@ The following diagram illustrates the overall architecture of the LSB method:
 ![Overall Architecture](./imgs/Overall.png)
 
 ## Repository Structure
-- **`lsb_backbone/`**: Python implementation of the LSB backbone.
-- **`unity_hmi/`**: Unity 3D project for the Human-Machine Interface.
-- **`demo/`**: Preprocessed inputs and outputs for demonstration purposes.
-- **`scripts/`**: Helper scripts for dataset preparation, evaluation, and visualization.
+- **`scr/`**: Python implementation of the LSB backbone.
+- **`data/`**: Nuscen
+- **`imgs/`**: doc image
+- **`models/`**: models
+- **`visualization/`**:  visualization.
 - **`README.md`**: Project documentation.
 
 ## Quick Start
