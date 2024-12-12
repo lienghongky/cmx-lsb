@@ -24,7 +24,10 @@ Below are some GIFs demonstrating the real-time vehicle detection capabilities o
 
 ### HMI Visualizations
 Below are some images showcasing the Human-Machine Interface (HMI) developed in Unity 3D:
-![HMI Park](./imgs/hmi.png)
+
+<p align="center">
+    <img src="./imgs/hmi-gif.gif" alt="HMI Park">
+</p>
 
 | ![HMI Image 1](./imgs/hmi-p.png) | ![HMI Image 2](./imgs/hmi-d4.png) |
 |:-------------------------------------:|:-------------------------------------:|
@@ -119,6 +122,7 @@ The following diagram illustrates the overall architecture of the LSB method:
 
 ### Screenshots
 #### Unity 3D HMI Visualization
+![HMI Screenshot](./imgs/hmi.png)
 ![HMI Screenshot](./imgs/hmi-cluster.png)
 
 #### BEV Output with Blob Detection
