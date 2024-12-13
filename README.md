@@ -1,4 +1,9 @@
-# Lift-Splat-Blob (LSB): A Hybrid Approach for Real-Time Vehicle Detection in ADAS
+<p align="center">
+    <img src="./imgs/banner.png" alt="HMI Park">
+</p>
+
+### Lift-Splat-Blob (LSB): A Hybrid Approach for Real-Time Vehicle Detection in ADAS(Advance Driver Assistant System)
+[Download the PDF](./docs/LSB_ADAS_Documentation.pdf)
 
 ## Overview
 The **Lift-Splat-Blob (LSB)** method is a novel hybrid approach for vehicle detection in Advanced Driver Assistance Systems (ADAS). This method combines the powerful Bird’s Eye View (BEV) transformation from the **Lift-Splat-Shoot (LSS)** method with an optimized blob detection algorithm, enabling efficient real-time inference for ADAS applications.
