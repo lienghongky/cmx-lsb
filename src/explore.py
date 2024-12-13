@@ -455,8 +455,20 @@ def viz_model_preds_no_mlt(version,
     print("Model total parameters: ", sum(p.numel() for p in model.parameters()))
 
     counter = 0
+
+    # drop camera images for testing
+    #  set drop to True to drop the images
+    # drop_indexs is the index of the camera images to drop
+    # 0: CAM_FRONT_LEFT
+    # 1: CAM_FRONT
+    # 2: CAM_FRONT_RIGHT
+    # 3: CAM_BACK_LEFT
+    # 4: CAM_BACK
+    # 5: CAM_BACK_RIGHT
+
+
     drop = False
-    drop_indexs = [1,4]
+    drop_indexs = [0,2,3,5]
     input_imgs = []
     with torch.no_grad():
         for batchi, (imgs, rots, trans, intrins, post_rots, post_trans, binimgs) in enumerate(loader):
@@ -484,7 +496,7 @@ def viz_model_preds_no_mlt(version,
 
                 gray = (gray * 255).astype(np.uint8)
                 # start = time.time()
-                blob = detect_blob(gray,save_output=False,return_output=True) 
+                blob = detect_blob(gray,save_output=True,return_output=True) 
                 end = time.time()
                 print("full FPS: ", 1/(end-start))
                 # min FPS 497.13215597961363

@@ -62,17 +62,17 @@ def detect_blob(np_image,save_output=False,return_output=False):
  
     asyncio.run(ws_server.emit(str(dic)))
 
-
-    if save_output:
-        # Draw keypoints on the original image
-        output_image = cv2.drawKeypoints(gray, keypoints, None, (0, 0, 255), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
-
-        # Save the output image with blobs marked
-        output_path = "blob_detection_output.png"
-        cv2.imwrite(output_path, output_image)
-
     if return_output:
         output_image = cv2.drawKeypoints(gray, keypoints, None, (255, 0, 0), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+        for keypoint in keypoints:
+            p = keypoint.pt
+            originx = gray.shape[0] / 2
+            originy = gray.shape[1] / 2
+            cv2.line(output_image, (int(originx), int(originy)), (int(p[0]), int(p[1])), (201, 161, 40), thickness=1, lineType=cv2.LINE_AA)
+        if save_output:
+            # Save the output image with blobs marked
+            output_path = "blob_detection_output.png"
+            cv2.imwrite(output_path, output_image)
         return output_image 
 
 

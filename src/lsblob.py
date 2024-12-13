@@ -102,16 +102,20 @@ def viz_model_preds_no_mlt(version,
 
     model.eval()
 
+    timing = 0
+    drop_at = [30, 50, 70, 90]
     counter = 0
     def loop():
+        nonlocal timing
         free_time = time.time()
         for batchi, (imgs, rots, trans, intrins, post_rots, post_trans, binimgs) in enumerate(loader):
                 # every 30 seconds blackout image for 20 seconds
-               
-
-                
-                # imgs[:, [1, 3], :, :, :] = 0
-               
+                if timing in drop_at:
+                    print("blackout")
+                    imgs[:, [0,1,2,3,4,5], :, :, :] = 0
+                if timing == 100:
+                    timing = 0
+                    
                 start = time.time()
                 out = model(imgs.to(device),
                         rots.to(device),
@@ -121,7 +125,7 @@ def viz_model_preds_no_mlt(version,
                         post_trans.to(device),
                         )
                 end = time.time()
-                print("BEV FPS: ", 1/(end-start))
+                print("BEV FPS: ", 1/(end-start)*4)
                 # BEV FPS: 14* 4(batch size) = 56
                 out = out.sigmoid().cpu()
                 for si in range(imgs.shape[0]):
@@ -136,6 +140,9 @@ def viz_model_preds_no_mlt(version,
                     # min FPS 497.13215597961363
                     # max FPS 1698.0987854251011
                     # avg FPS 773.7254729661064
+                    # delay 1s
+                    timing += 1
+                    time.sleep(0.3)
 
                     if save_output:
                             plt.clf()

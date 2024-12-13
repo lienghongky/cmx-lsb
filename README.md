@@ -18,7 +18,7 @@ This repository includes the implementation of the LSB method and its proof-of-c
 ### Real-Time Vehicle Detection
 Below are some GIFs demonstrating the real-time vehicle detection capabilities of the LSB method:
 
-| ![GIF 1](./imgs/full_cams.gif){:width="30%"} | ![GIF 2](./imgs/drop_front_back_cam.gif){:width="30%"} | ![GIF 3](./imgs/drop_right_cams.gif){:width="30%"} |
+| ![GIF 1](./imgs/full_cams.gif)| ![GIF 2](./imgs/drop_front_back_cam.gif) | ![GIF 3](./imgs/drop_right_cams.gif)|
 |:------------------------------:|:----------------------------------------:|:-----------------------------------:|
 | **All 6 Cameras are feeded to model** | **Disconnected Front and back Cam** | **Disconnected both Right Cam** |
 
@@ -126,7 +126,7 @@ The following diagram illustrates the overall architecture of the LSB method:
 ![HMI Screenshot](./imgs/hmi-cluster.png)
 
 #### BEV Output with Blob Detection
-![BEV Output](./imgs/full_cams.gif)
+![BEV Output](./imgs/output.gif)
 
 ## Citation
 If you find this work useful, please consider citing the original *Lift-Splat-Shoot* paper:
