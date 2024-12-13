@@ -10,7 +10,7 @@ This repository is a modification of the original [*Lift-Splat-Shoot(LSS)* repos
 
 
 ### Disclaimer
-<span style="color:red">This repository is provided as-is. I am not responsible for any misuse or violation of the original license terms. Please ensure compliance with the terms outlined in the original repository's license.</span>
+*This repository is provided as-is. I am not responsible for any misuse or violation of the original license terms. Please ensure compliance with the terms outlined in the original repository's license.*
 
 ## Overview
 The **Lift-Splat-Blob (LSB)** method is a novel hybrid approach for vehicle detection in Advanced Driver Assistance Systems (ADAS). This method combines the powerful Bird’s Eye View (BEV) transformation from the **Lift-Splat-Shoot (LSS)** method with an optimized blob detection algorithm, enabling efficient real-time inference for ADAS applications.
