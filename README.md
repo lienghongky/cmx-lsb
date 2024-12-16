@@ -1,9 +1,7 @@
-<p align="center">
-    <img src="./imgs/banner.png" alt="HMI Park">
-</p>
 
-### Lift-Splat-Blob (LSB): A Hybrid Approach for Real-Time Vehicle Detection in ADAS(Advance Driver Assistant System)
-[Download the PDF](./imgs/LSB.pdf)
+
+# Lift-Splat-Blob (LSB): A Hybrid Approach for Real-Time Vehicle Detection in ADAS(Advance Driver Assistant System)
+[Download the PDF](./imgs/banner.png)
 
 ### Note***
 This repository is a modification of the original [*Lift-Splat-Shoot(LSS)* repository](https://github.com/nv-tlabs/lift-splat-shoot). The modifications include the integration of a blob detection algorithm and the development of a Unity 3D HMI for enhanced visualization. **For citation, reference, and license information regarding Lift-Splat-Shoot, please refer to the original repository.**
